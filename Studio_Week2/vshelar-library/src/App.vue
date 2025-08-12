@@ -1,13 +1,13 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import JSON from './components/JSON.vue';
+import JSON from './components/JSON.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Form from './components/Form.vue'
 </script>
 
 <template>
-  <main>
-     <JSON/>
-  </main>
+  <!-- <JSON/> -->
+  <Form />
 </template>
 
 <style scoped>
