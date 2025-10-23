@@ -9,5 +9,5 @@ export default defineConfig({
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
   // 👇 add this line
-  base: '/FIT5032_35212969/',   // your repo name
+  base: '/FIT5032Library35212969/',   // your repo name
 })
