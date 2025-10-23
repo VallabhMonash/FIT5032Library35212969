@@ -8,5 +8,6 @@ export default defineConfig({
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
-  base: '/FIT5032_35212969/',   // ← important for GitHub Pages
+  // 👇 add this line
+  base: '/FIT5032_35212969/',   // your repo name
 })
