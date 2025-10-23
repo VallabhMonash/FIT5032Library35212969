@@ -1,13 +1,22 @@
 <script setup>
 // import JSON from './components/JSON.vue'
 // import RegistrationFormForm from './components/RegistrationForm.vue'
+
 import BHeader from './components/BHeader.vue'
 // import JSON from './components/JSON.vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+// access the current route reactively
+const route = useRoute()
+
+// computed property that updates automatically when route changes
+const showHeader = computed(() => !route.name?.includes('CountBookAPI'))
 </script>
 
 <template>
   <div class="main-container">
-    <header>
+    <header v-if="showHeader">
       <BHeader />
     </header>
 
